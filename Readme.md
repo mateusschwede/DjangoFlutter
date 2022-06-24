@@ -1,6 +1,9 @@
  # Projeto web Django Flutter
 
-## Passo a passo (Django API):
+## Aplicações recomendadas:
+- VSCode, com extensões Python (Official) e Flutter (Official)
+
+## Passo a passo Backend (Django API):
 1. Instalar Django: pip3 install django
 2. Instalar Django REST Framework: pip3 install djangorestframework
 3. Instalar suporte à erro CORS Django: pip3 install django-cors-headers
@@ -15,22 +18,29 @@
 8. Em 'notes/settings.py', informar no final do arquivo:
 CORS_ALLOW_ALL_ORIGINS = True
 
-7. Em 'api/views.py', formatar todo o arquivo com novo código
-8. Executar projeto: python3 manage.py runserver
-9. Na pasta da App 'api', criar arquivo 'urls.py'
-10. Em 'notes/urls.py', alterar código
-11. Em 'api/models.py', inserir conteúdo
-12. Criar Migrations: python3 manage.py makemigrations
-13. Executar Migrations: python3 manage.py migrate
-14. Criar usuário Django: python3 manage.py createsuperuser (Informe seus dados de preferência)
-15. Em 'api/admin.py', inserir conteúdo
-16. Via painel Django admin, inserir algumas Notes
-17. Em 'api', criar arquivo 'serializers.py', com seu conteúdo
+9. Em 'api/views.py', formatar todo o arquivo com novo código
+10. Executar projeto: python3 manage.py runserver
+11. Na pasta da App 'api', criar arquivo 'urls.py'
+12. Em 'notes/urls.py', alterar código
+13. Em 'api/models.py', inserir conteúdo
+14. Criar Migrations: python3 manage.py makemigrations
+15. Executar Migrations: python3 manage.py migrate
+16. Criar usuário Django: python3 manage.py createsuperuser (Informe seus dados de preferência)
+17. Em 'api/admin.py', inserir conteúdo
+18. Via painel Django admin, inserir algumas Notes
+19. Em 'api', criar arquivo 'serializers.py', com seu conteúdo
 URLS da API:
 - Home: 'localhost:8000'
 - Listar notes: 'localhost:8000/notes/'
 - Ver note 1: 'localhost:8000/notes/1/'
 - Criar note: 'localhost:8000/notes/create/'
 - Editar note 1: 'localhost:8000/notes/1/update/'
+
+## Passo a passo Frontend (Flutter):
+1. Baixar SDK Flutter: sudo snap install flutter --classic
+2. Relacionar Flutter ao Path: flutter sdk-path
+3. Ao lado da pasta do projeto Django ('notes'), criar pasta do projeto Flutter ('demodjango'): flutter create demodjango
+4. Entrar na pasta do projeto Flutter ('demodjango')
+PAROU EM 1:07:00 (https://youtu.be/VnztChBw7Og)
 
 > Mateus Schwede
