@@ -1,7 +1,7 @@
  # Projeto web Django Flutter
 
 ## Aplicações recomendadas:
-- VSCode, com extensões Python (Official) e Flutter (Official)
+- VSCode, com extensões Python (Official) e Flutter (Official) e Dart Data Class Generator
 
 ## Passo a passo Backend (Django API):
 1. Instalar Django: pip3 install django
@@ -41,6 +41,10 @@ URLS da API:
 2. Relacionar Flutter ao Path: flutter sdk-path
 3. Ao lado da pasta do projeto Django ('notes'), criar pasta do projeto Flutter ('demodjango'): flutter create demodjango
 4. Entrar na pasta do projeto Flutter ('demodjango')
-PAROU EM 1:07:00 (https://youtu.be/VnztChBw7Og)
+5. Instalar plugin HTTP: flutter pub add http
+5. Em 'demodjango/lib/', alterar conteúdo do arquivo 'main.dart'
+6. Em 'demodjango/lib/', criar arquivos 'urls.dart', 'create.dart', 'update.dart', 'note.dart'
+(1:18:00)
+
 
 > Mateus Schwede
