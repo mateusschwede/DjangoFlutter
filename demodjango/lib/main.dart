@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:demodjango/create.dart';
 import 'package:demodjango/urls.dart';
 import 'package:demodjango/note.dart';
 import 'package:flutter/material.dart';
@@ -83,7 +84,10 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => CreatePage(
+                  client: client,
+                ))),
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),

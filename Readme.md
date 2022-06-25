@@ -44,7 +44,7 @@ URLS da API:
 5. Instalar plugin HTTP: flutter pub add http
 5. Em 'demodjango/lib/', alterar conteúdo do arquivo 'main.dart'
 6. Em 'demodjango/lib/', criar arquivos 'urls.dart', 'create.dart', 'update.dart', 'note.dart'
-(1:18:00)
+(Parou 1:39:30)
 
 
 > Mateus Schwede
