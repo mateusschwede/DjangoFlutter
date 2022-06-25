@@ -53,7 +53,10 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {});
   }
 
-  void _addNote() {}
+  void _deleteNote(int id) {
+    client.delete(deleteUrl(id));
+    _retrieveNotes();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -73,14 +76,14 @@ class _MyHomePageState extends State<MyHomePage> {
               onTap: () {},
               trailing: IconButton(
                 icon: Icon(Icons.delete),
-                onPressed: () {},
+                onPressed: () => _deleteNote(notes[index].id),
               ),
             );
           },
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _addNote,
+        onPressed: () {},
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
