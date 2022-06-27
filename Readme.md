@@ -19,16 +19,16 @@
 CORS_ALLOW_ALL_ORIGINS = True
 
 9. Em 'api/views.py', formatar todo o arquivo com novo código
-10. Executar projeto: python3 manage.py runserver
-11. Na pasta da App 'api', criar arquivo 'urls.py'
-12. Em 'notes/urls.py', alterar código
-13. Em 'api/models.py', inserir conteúdo
-14. Criar Migrations: python3 manage.py makemigrations
-15. Executar Migrations: python3 manage.py migrate
-16. Criar usuário Django: python3 manage.py createsuperuser (Informe seus dados de preferência)
-17. Em 'api/admin.py', inserir conteúdo
-18. Via painel Django admin, inserir algumas Notes
-19. Em 'api', criar arquivo 'serializers.py', com seu conteúdo
+10. Na pasta da App 'api', criar arquivo 'urls.py'
+11. Em 'notes/urls.py', alterar código
+12. Em 'api/models.py', inserir conteúdo
+13. Criar Migrations: python3 manage.py makemigrations
+14. Executar Migrations: python3 manage.py migrate
+15. Criar usuário Django: python3 manage.py createsuperuser (Informe seus dados de preferência)
+16. Em 'api/admin.py', inserir conteúdo
+17. Via painel Django admin, inserir algumas Notes
+18. Em 'api', criar arquivo 'serializers.py', com seu conteúdo
+19. Executar projeto: python3 manage.py runserver
 URLS da API:
 - Home: 'localhost:8000'
 - Listar notes: 'localhost:8000/notes/'
@@ -44,7 +44,7 @@ URLS da API:
 5. Instalar plugin HTTP: flutter pub add http
 5. Em 'demodjango/lib/', alterar conteúdo do arquivo 'main.dart'
 6. Em 'demodjango/lib/', criar arquivos 'urls.dart', 'create.dart', 'update.dart', 'note.dart'
-(Parou 1:39:30)
+(Parou 1:44:54)
 
 
 > Mateus Schwede

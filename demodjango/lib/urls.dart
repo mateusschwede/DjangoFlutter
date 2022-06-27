@@ -23,3 +23,6 @@ deleteUrl(id) {
   );
   return deleteUrl;
 }
+
+var createUrl;
+var updateUrl;

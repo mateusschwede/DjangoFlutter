@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:demodjango/create.dart';
+import 'package:demodjango/update.dart';
 import 'package:demodjango/urls.dart';
 import 'package:demodjango/note.dart';
 import 'package:flutter/material.dart';
@@ -74,7 +75,12 @@ class _MyHomePageState extends State<MyHomePage> {
           itemBuilder: (BuildContext context, int index) {
             return ListTile(
               title: Text(notes[index].note),
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => UpdatedPage(
+                          client: client,
+                        )));
+              },
               trailing: IconButton(
                 icon: Icon(Icons.delete),
                 onPressed: () => _deleteNote(notes[index].id),
