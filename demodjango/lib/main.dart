@@ -8,16 +8,6 @@ import 'package:http/http.dart' as http;
 import 'package:http/http.dart';
 import 'note.dart';
 
-/*
-@override
-void didChangeDependencies() {
-  super.didChangeDependencies();
-  setState(() {
-    _retrieveNotes();
-  });
-}
-*/
-
 void main() {
   runApp(const MyApp());
 }
@@ -28,11 +18,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'UB Social notes',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Django demo'),
+      home: const MyHomePage(title: 'UB Social notes'),
     );
   }
 }

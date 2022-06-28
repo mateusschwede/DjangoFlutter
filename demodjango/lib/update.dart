@@ -31,7 +31,7 @@ class _UpdatedPageState extends State<UpdatedPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Update"),
+        title: Text("Editar"),
       ),
       body: Column(
         children: [
@@ -45,7 +45,7 @@ class _UpdatedPageState extends State<UpdatedPage> {
                     .put(updateUrl(widget.id), body: {'body': controller.text});
                 Navigator.pop(context);
               },
-              child: Text("Update note"))
+              child: Text("Atualizar note"))
         ],
       ),
     );

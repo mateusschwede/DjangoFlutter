@@ -19,7 +19,7 @@ class _CreatePageState extends State<CreatePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Create"),
+        title: Text("Criar"),
       ),
       body: Column(
         children: [
@@ -32,7 +32,7 @@ class _CreatePageState extends State<CreatePage> {
                 widget.client.post(createUrl, body: {'body': controller.text});
                 Navigator.pop(context);
               },
-              child: Text("Create note"))
+              child: Text("Criar note"))
         ],
       ),
     );
