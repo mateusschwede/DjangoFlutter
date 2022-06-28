@@ -1,17 +1,15 @@
-/*
-path('', views.getRoutes),
-path('notes/', views.getNotes),
-path('notes/create/', views.createNote),
-path('notes/<str:pk>/update/', views.updateNote),
-path('notes/<str:pk>/delete/', views.deleteNote),
-path('notes/<str:pk>/', views.getNote),
-*/
-
 var retrieveUrl = Uri(
   scheme: 'http',
   host: 'localhost',
   port: 8000,
   path: 'notes/',
+);
+
+var createUrl = Uri(
+  scheme: 'http',
+  host: 'localhost',
+  port: 8000,
+  path: 'notes/create/',
 );
 
 deleteUrl(id) {
@@ -24,5 +22,12 @@ deleteUrl(id) {
   return deleteUrl;
 }
 
-var createUrl;
-var updateUrl;
+updateUrl(id) {
+  var updateUrl = Uri(
+    scheme: 'http',
+    host: 'localhost',
+    port: 8000,
+    path: '/notes/$id/update/',
+  );
+  return updateUrl;
+}

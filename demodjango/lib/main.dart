@@ -8,6 +8,16 @@ import 'package:http/http.dart' as http;
 import 'package:http/http.dart';
 import 'note.dart';
 
+/*
+@override
+void didChangeDependencies() {
+  super.didChangeDependencies();
+  setState(() {
+    _retrieveNotes();
+  });
+}
+*/
+
 void main() {
   runApp(const MyApp());
 }
@@ -29,7 +39,6 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
-
   final String title;
 
   @override
@@ -79,6 +88,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (context) => UpdatedPage(
                           client: client,
+                          id: notes[index].id,
+                          note: notes[index].note,
                         )));
               },
               trailing: IconButton(

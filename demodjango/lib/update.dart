@@ -20,11 +20,18 @@ class UpdatedPage extends StatefulWidget {
 
 class _UpdatedPageState extends State<UpdatedPage> {
   TextEditingController controller = TextEditingController();
+
+  @override
+  void initState() {
+    controller.text = widget.note;
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Create"),
+        title: Text("Update"),
       ),
       body: Column(
         children: [
@@ -34,10 +41,11 @@ class _UpdatedPageState extends State<UpdatedPage> {
           ),
           ElevatedButton(
               onPressed: () {
-                widget.client.post(createUrl, body: {'body': controller.text});
+                widget.client
+                    .put(updateUrl(widget.id), body: {'body': controller.text});
                 Navigator.pop(context);
               },
-              child: Text("Create note"))
+              child: Text("Update note"))
         ],
       ),
     );
